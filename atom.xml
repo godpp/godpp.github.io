@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>(디)발자 박성준의 포트폴리오</title>
+  
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="https://godpp.github.io/"/>
+  <updated>2018-03-25T10:46:55.492Z</updated>
+  <id>https://godpp.github.io/</id>
+  
+  <author>
+    <name>Park Seong Jun</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Career</title>
+    <link href="https://godpp.github.io/2018/03/25/Career/"/>
+    <id>https://godpp.github.io/2018/03/25/Career/</id>
+    <published>2018-03-25T10:46:45.000Z</published>
+    <updated>2018-03-25T10:46:55.492Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+      <category term="Career" scheme="https://godpp.github.io/categories/Career/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Seoullo IOS App</title>
+    <link href="https://godpp.github.io/2018/03/25/Seoullo-IOS-App/"/>
+    <id>https://godpp.github.io/2018/03/25/Seoullo-IOS-App/</id>
+    <published>2018-03-24T15:10:23.000Z</published>
+    <updated>2018-03-25T10:41:06.632Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="서울로-관광-애플리케이션"><a href="#서울로-관광-애플리케이션" class="headerlink" title="서울로 관광 애플리케이션"></a>서울로 관광 애플리케이션</h2><h3 id="개요"><a href="#개요" class="headerlink" title="개요"></a>개요</h3><p>많은 정보를 얻기 위해선 직접 검색을 하여 홈페이지에 들어가야 하는 번거로움을 없애고자 ‘서울로7017’에 대한 모든 관광 정보를 직관적으로 보여주고, 위치 기반 인증사진으로 서울로에 대한 커뮤니티를 구현한 애플리케이션.</p><h3 id="프로젝트-기간"><a href="#프로젝트-기간" class="headerlink" title="프로젝트 기간"></a>프로젝트 기간</h3><p>2017년 10월 1일 ~ 2017년 10월 31일 (1개월) - iPhone 4 개발</p><p>2017년 11월 21일 ~ 2017년 12월 5일 (2주) - iPhone X 개발</p><h3 id="프로젝트-등급"><a href="#프로젝트-등급" class="headerlink" title="프로젝트 등급"></a>프로젝트 등급</h3><p>2017 서울시 앱 공모전 출품 (알파테스트) , 현재 Server Off</p><h3 id="GitHub-Repository"><a href="#GitHub-Repository" class="headerlink" title="GitHub Repository"></a>GitHub Repository</h3><p><a href="https://github.com/godpp/seoullo_ios" target="_blank" rel="noopener">https://github.com/godpp/seoullo_ios</a></p><h3 id="워크플로우"><a href="#워크플로우" class="headerlink" title="워크플로우"></a>워크플로우</h3><p><img src="/image/서울로UI/seoullo_워크플로우.jpg" alt=""></p><h3 id="개발설명"><a href="#개발설명" class="headerlink" title="개발설명"></a>개발설명</h3><h4 id="로그인-화면"><a href="#로그인-화면" class="headerlink" title="로그인 화면"></a>로그인 화면</h4><p><img src="/image/서울로UI/seoullo_로그인화면.jpg" alt=""></p><h4 id="메인화면"><a href="#메인화면" class="headerlink" title="메인화면"></a>메인화면</h4><p><img src="/image/서울로UI/seoullo_메인화면.jpg" alt=""></p><h4 id="관광지-정보-화면"><a href="#관광지-정보-화면" class="headerlink" title="관광지 정보 화면"></a>관광지 정보 화면</h4><p><img src="/image/서울로UI/seoullo_장소화면.jpg" alt=""></p><h4 id="관광지-후기-작성-인증샷-업로드"><a href="#관광지-후기-작성-인증샷-업로드" class="headerlink" title="관광지 후기 작성 (인증샷 업로드)"></a>관광지 후기 작성 (인증샷 업로드)</h4><p><img src="/image/서울로UI/seoullo_후기작성.jpg" alt=""></p><h4 id="서울로-인증샷-모아보기"><a href="#서울로-인증샷-모아보기" class="headerlink" title="#서울로 인증샷 모아보기"></a>#서울로 인증샷 모아보기</h4><p><img src="/image/서울로UI/seoullo_서울로.jpg" alt=""></p><h4 id="서울로-정보-이벤트-코스-프로그램"><a href="#서울로-정보-이벤트-코스-프로그램" class="headerlink" title="서울로 정보 (이벤트, 코스, 프로그램)"></a>서울로 정보 (이벤트, 코스, 프로그램)</h4><p><img src="/image/서울로UI/seoullo_정보화면.jpg" alt=""></p><h4 id="마이페이지"><a href="#마이페이지" class="headerlink" title="마이페이지"></a>마이페이지</h4><p><img src="/image/서울로UI/seoullo_마이페이지.jpg" alt=""><br><img src="/image/서울로UI/seoullo_마이페이지2.jpg" alt=""></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;서울로-관광-애플리케이션&quot;&gt;&lt;a href=&quot;#서울로-관광-애플리케이션&quot; class=&quot;headerlink&quot; title=&quot;서울로 관광 애플리케이션&quot;&gt;&lt;/a&gt;서울로 관광 애플리케이션&lt;/h2&gt;&lt;h3 id=&quot;개요&quot;&gt;&lt;a href=&quot;#개요&quot; cla
+      
+    
+    </summary>
+    
+      <category term="Project" scheme="https://godpp.github.io/categories/Project/"/>
+    
+    
+      <category term="seoullo, ios, project, swift, app" scheme="https://godpp.github.io/tags/seoullo-ios-project-swift-app/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Cyrano IOS App</title>
+    <link href="https://godpp.github.io/2018/03/21/Cyrano%20IOS%20App/"/>
+    <id>https://godpp.github.io/2018/03/21/Cyrano IOS App/</id>
+    <published>2018-03-21T09:53:06.000Z</published>
+    <updated>2018-03-24T15:11:01.682Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="연애상담애플리케이션"><a href="#연애상담애플리케이션" class="headerlink" title="연애상담애플리케이션"></a>연애상담애플리케이션</h2><h3 id="개요"><a href="#개요" class="headerlink" title="개요"></a>개요</h3><p> 연애고민에 특화된 전문적인 상담을 보다 쉽게 서비스하기 위해 기획한 애플리케이션</p><p> 유저들간 연애고민에 대해 이야기를 나누고 공감을 하는 간단한 커뮤니티를 뛰어넘어, 연애 상담 경험과 지식이 많은 전문가에게 상담을 받아 신뢰성 높은 연애고민상담이 이루어지는 연애 관련 애플리케이션입니다.</p><h3 id="프로젝트-기간"><a href="#프로젝트-기간" class="headerlink" title="프로젝트 기간"></a>프로젝트 기간</h3><p>2017년 6월 24일 ~ 2017년 7월 8일 (3주)</p><h3 id="프로젝트-등급"><a href="#프로젝트-등급" class="headerlink" title="프로젝트 등급"></a>프로젝트 등급</h3><p>알파테스트</p><h3 id="GitHub-Repository"><a href="#GitHub-Repository" class="headerlink" title="GitHub Repository"></a>GitHub Repository</h3><p><a href="https://github.com/godpp/cyrano_ios" target="_blank" rel="noopener">https://github.com/godpp/cyrano_ios</a></p><h3 id="워크플로우"><a href="#워크플로우" class="headerlink" title="워크플로우"></a>워크플로우</h3><p><img src="/image/cyrano_workflow.jpg" alt=""></p><h3 id="개발설명"><a href="#개발설명" class="headerlink" title="개발설명"></a>개발설명</h3><h4 id="스플래쉬-amp-로그인-화면"><a href="#스플래쉬-amp-로그인-화면" class="headerlink" title="스플래쉬 &amp; 로그인 화면"></a>스플래쉬 &amp; 로그인 화면</h4><p><img src="/image/시라노UI/시라노_스플_로그인.png" alt=""></p><h4 id="회원가입"><a href="#회원가입" class="headerlink" title="회원가입"></a>회원가입</h4><p><img src="/image/시라노UI/시라노_회원가입.png" alt=""></p><h4 id="메인화면"><a href="#메인화면" class="headerlink" title="메인화면"></a>메인화면</h4><p><img src="/image/시라노UI/시라노_메인화면.png" alt=""></p><h4 id="상세고민"><a href="#상세고민" class="headerlink" title="상세고민"></a>상세고민</h4><p><img src="/image/시라노UI/시라노_상세고민.png" alt=""></p><h4 id="답변쓰기"><a href="#답변쓰기" class="headerlink" title="답변쓰기"></a>답변쓰기</h4><p><img src="/image/시라노UI/시라노_답변쓰기.png" alt=""></p><h4 id="공개-amp-비밀-고민작성"><a href="#공개-amp-비밀-고민작성" class="headerlink" title="공개 &amp; 비밀 고민작성"></a>공개 &amp; 비밀 고민작성</h4><p><img src="/image/시라노UI/시라노_고민작성.png" alt=""></p><h4 id="내가-쓴-상담"><a href="#내가-쓴-상담" class="headerlink" title="내가 쓴 상담"></a>내가 쓴 상담</h4><p><img src="/image/시라노UI/시라노_내가쓴상담.png" alt=""></p><h4 id="설정"><a href="#설정" class="headerlink" title="설정"></a>설정</h4><p><img src="/image/시라노UI/시라노_설정.png" alt=""></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;연애상담애플리케이션&quot;&gt;&lt;a href=&quot;#연애상담애플리케이션&quot; class=&quot;headerlink&quot; title=&quot;연애상담애플리케이션&quot;&gt;&lt;/a&gt;연애상담애플리케이션&lt;/h2&gt;&lt;h3 id=&quot;개요&quot;&gt;&lt;a href=&quot;#개요&quot; class=&quot;headerli
+      
+    
+    </summary>
+    
+      <category term="Project" scheme="https://godpp.github.io/categories/Project/"/>
+    
+    
+      <category term="cyrano, ios, project, swift, app" scheme="https://godpp.github.io/tags/cyrano-ios-project-swift-app/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>About</title>
+    <link href="https://godpp.github.io/2018/03/21/About/"/>
+    <id>https://godpp.github.io/2018/03/21/About/</id>
+    <published>2018-03-21T09:46:10.606Z</published>
+    <updated>2018-03-25T11:23:29.750Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="프로필"><a href="#프로필" class="headerlink" title="프로필"></a>프로필</h2><h3 id="이름"><a href="#이름" class="headerlink" title="이름"></a>이름</h3><blockquote><p>박 성 준  </p></blockquote><h3 id="생년월일"><a href="#생년월일" class="headerlink" title="생년월일"></a>생년월일</h3><p>1994년 5월 12일 (만 23세)</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;프로필&quot;&gt;&lt;a href=&quot;#프로필&quot; class=&quot;headerlink&quot; title=&quot;프로필&quot;&gt;&lt;/a&gt;프로필&lt;/h2&gt;&lt;h3 id=&quot;이름&quot;&gt;&lt;a href=&quot;#이름&quot; class=&quot;headerlink&quot; title=&quot;이름&quot;&gt;&lt;/a&gt;이름&lt;/h3&gt;&lt;b
+      
+    
+    </summary>
+    
+      <category term="About" scheme="https://godpp.github.io/categories/About/"/>
+    
+    
+  </entry>
+  
+</feed>
