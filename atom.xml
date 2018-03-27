@@ -87,9 +87,9 @@
     <link href="https://godpp.github.io/2018/03/21/About/"/>
     <id>https://godpp.github.io/2018/03/21/About/</id>
     <published>2018-03-21T09:46:10.606Z</published>
-    <updated>2018-03-27T03:14:18.020Z</updated>
+    <updated>2018-03-27T03:15:24.674Z</updated>
     
-    <content type="html"><![CDATA[<blockquote><p>박성준이란?</p></blockquote>]]></content>
+    <content type="html"><![CDATA[<blockquote><p>박성준이란?</p><blockquote></blockquote></blockquote>]]></content>
     
     <summary type="html">
     
@@ -97,6 +97,8 @@
       
         &lt;blockquote&gt;
 &lt;p&gt;박성준이란?&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;/blockquote&gt;
 &lt;/blockquote&gt;
 
       
