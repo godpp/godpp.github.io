@@ -18,11 +18,11 @@
 <meta property="og:image" content="https://godpp.github.io/image/서울로UI/서울로_로그인화면.jpg">
 <meta property="og:image" content="https://godpp.github.io/image/서울로UI/서울로_메인화면.jpg">
 <meta property="og:image" content="https://godpp.github.io/image/서울로UI/서울로_관광지정보.jpg">
-<meta property="og:image" content="https://godpp.github.io/image/서울로UI/seoullo_서울로.jpg">
-<meta property="og:image" content="https://godpp.github.io/image/서울로UI/seoullo_정보화면.jpg">
+<meta property="og:image" content="https://godpp.github.io/image/서울로UI/서울로_샵서울로.jpg">
+<meta property="og:image" content="https://godpp.github.io/image/서울로UI/서울로_서울로정보.jpg">
 <meta property="og:image" content="https://godpp.github.io/image/서울로UI/seoullo_마이페이지.jpg">
 <meta property="og:image" content="https://godpp.github.io/image/서울로UI/seoullo_마이페이지2.jpg">
-<meta property="og:updated_time" content="2018-03-28T06:09:19.692Z">
+<meta property="og:updated_time" content="2018-03-29T11:43:47.326Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Seoullo IOS App">
 <meta name="twitter:description" content="서울로 관광 애플리케이션개요많은 정보를 얻기 위해선 직접 검색을 하여 홈페이지에 들어가야 하는 번거로움을 없애고자 ‘서울로7017’에 대한 모든 관광 정보를 직관적으로 보여주고, 위치 기반 인증사진으로 서울로에 대한 커뮤니티를 구현한 애플리케이션. 프로젝트 기간2017년 10월 1일 ~ 2017년 10월 31일 (1개월) - iPhone 4 개발 2017년">
@@ -164,8 +164,11 @@
 <p>메인화면에서 지도이미지뷰 위의 관광지를 클릭하면 볼수있는 관광지 정보 화면이다. 중단 SegmentedControl을 이용해 정보, 후기로 뷰를 나누었고, 특히 후기 뷰는 Container View를 활용해 따로 뷰를 빼서 TableView를 구현하였다.</p>
 <p>특히 후기탭에 후기 작성 버튼을 플로팅 버튼으로 만들어 쉽게 작성가능하도록 만들었으며, 후기 작성 뷰는 모달식으로 구성하였다.</p>
 <p>후기 작성 뷰에서 사진을 업로드하면 ‘#서울로’ 탭바에 자동으로 모든 사용자의 사진이 모아진다.</p>
-<h4 id="서울로-인증샷-모아보기"><a href="#서울로-인증샷-모아보기" class="headerlink" title="#서울로 인증샷 모아보기"></a>#서울로 인증샷 모아보기</h4><p><img src="/image/서울로UI/seoullo_서울로.jpg" alt=""></p>
-<h4 id="서울로-정보-이벤트-코스-프로그램"><a href="#서울로-정보-이벤트-코스-프로그램" class="headerlink" title="서울로 정보 (이벤트, 코스, 프로그램)"></a>서울로 정보 (이벤트, 코스, 프로그램)</h4><p><img src="/image/서울로UI/seoullo_정보화면.jpg" alt=""></p>
+<h4 id="서울로-인증샷-모아보기"><a href="#서울로-인증샷-모아보기" class="headerlink" title="#서울로 인증샷 모아보기"></a>#서울로 인증샷 모아보기</h4><p><img src="/image/서울로UI/서울로_샵서울로.jpg" alt=""></p>
+<p>후기 작성할때 관광지 인증샷을 올리면 모든 사용자의 인증사진을 모아보여줄 수 있는 #서울로 화면이다. (테스트용으로 후기사진을 업로드 하다보니…)</p>
+<p>서버로 부터 사진의 id 값을 받아 뷰에 뿌려줄 때 Int.max와 같은 큰 값을 받아 갱신되는 사진들로 부터 최신 사진을 받을 수 있도록 네트워킹 구현을 했다.</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">var id = Int.max</span><br><span class="line"></span><br><span class="line">override func viewWillAppear(_ animated: Bool) &#123;</span><br><span class="line">    <span class="built_in">let</span> model = ProofShotModel(self)</span><br><span class="line">    model.proofshot(id: id)</span><br><span class="line">    </span><br><span class="line">    ProofCollecView.reloadData()</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="서울로-정보-이벤트-코스-프로그램"><a href="#서울로-정보-이벤트-코스-프로그램" class="headerlink" title="서울로 정보 (이벤트, 코스, 프로그램)"></a>서울로 정보 (이벤트, 코스, 프로그램)</h4><p><img src="/image/서울로UI/서울로_서울로정보.jpg" alt=""></p>
 <h4 id="마이페이지"><a href="#마이페이지" class="headerlink" title="마이페이지"></a>마이페이지</h4><p><img src="/image/서울로UI/seoullo_마이페이지.jpg" alt=""><br><img src="/image/서울로UI/seoullo_마이페이지2.jpg" alt=""></p>
 
   </div>
