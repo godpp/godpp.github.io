@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://godpp.github.io/"/>
-  <updated>2018-03-30T00:20:25.506Z</updated>
+  <updated>2018-03-31T14:39:58.734Z</updated>
   <id>https://godpp.github.io/</id>
   
   <author>
@@ -15,6 +15,24 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>chilDraw Ipad IOS App</title>
+    <link href="https://godpp.github.io/2018/03/31/chilDraw-Ipad-IOS-App/"/>
+    <id>https://godpp.github.io/2018/03/31/chilDraw-Ipad-IOS-App/</id>
+    <published>2018-03-31T14:39:13.000Z</published>
+    <updated>2018-03-31T14:39:58.734Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+      <category term="Project" scheme="https://godpp.github.io/categories/Project/"/>
+    
+    
+      <category term="childraw, ios, ipad, project, swift, app" scheme="https://godpp.github.io/tags/childraw-ios-ipad-project-swift-app/"/>
+    
+  </entry>
   
   <entry>
     <title>Seoullo IOS App</title>
