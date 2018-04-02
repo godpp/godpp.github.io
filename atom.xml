@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://godpp.github.io/"/>
-  <updated>2018-04-02T13:36:22.150Z</updated>
+  <updated>2018-04-02T13:41:37.338Z</updated>
   <id>https://godpp.github.io/</id>
   
   <author>
@@ -21,9 +21,9 @@
     <link href="https://godpp.github.io/2018/03/31/chilDraw-IOS-IPAD-App/"/>
     <id>https://godpp.github.io/2018/03/31/chilDraw-IOS-IPAD-App/</id>
     <published>2018-03-31T14:39:13.000Z</published>
-    <updated>2018-04-02T13:36:22.150Z</updated>
+    <updated>2018-04-02T13:41:37.338Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="신경망-학습-그림-그리기를-이용한-유아-영어-교육-애플리케이션"><a href="#신경망-학습-그림-그리기를-이용한-유아-영어-교육-애플리케이션" class="headerlink" title="신경망 학습 그림 그리기를 이용한 유아 영어 교육 애플리케이션"></a>신경망 학습 그림 그리기를 이용한 유아 영어 교육 애플리케이션</h2><h3 id="개요"><a href="#개요" class="headerlink" title="개요"></a>개요</h3><p>IT를 접목한 유아 영어 교육인 에듀테크, 재미와 반복학습의 특징을 가지고 있는 그림 그리기를 접목시켜, 아이들의 영어 발음을 인식하는 음성인식(DNN), 실시간으로 서버와 통신해 아이들의 그림의 특징을 추출할 수 있는 이미지 인식(CNN)으로 구성된 영어 교육 애플리케이션.</p><h3 id="프로젝트-기간"><a href="#프로젝트-기간" class="headerlink" title="프로젝트 기간"></a>프로젝트 기간</h3><p>2017년 12월 1일 ~ 현재 개발중 (5월 초 목표)</p><h3 id="프로젝트-등급"><a href="#프로젝트-등급" class="headerlink" title="프로젝트 등급"></a>프로젝트 등급</h3><p>현재 음성인식, 이미지 인식 학습 구현 완료 상태.<br>서버와 학습 프로그램 간 연동 문제 해결중.<br>애플리케이션은 콘텐츠 재정립으로 디자인 다시 설계중.</p><h3 id="GitHub-Repository"><a href="#GitHub-Repository" class="headerlink" title="GitHub Repository"></a>GitHub Repository</h3><p><a href="https://github.com/godpp/chilDraw_IOS" target="_blank" rel="noopener">https://github.com/godpp/chilDraw_IOS</a></p><h3 id="워크플로우"><a href="#워크플로우" class="headerlink" title="워크플로우"></a>워크플로우</h3><hr><h2 id=""><a href="#" class="headerlink" title=""></a><img src="/image/chilDrawUI/chilDraw_워크플로우.jpg" alt=""></h2><h3 id="개발설명"><a href="#개발설명" class="headerlink" title="개발설명"></a>개발설명</h3>]]></content>
+    <content type="html"><![CDATA[<h2 id="신경망-학습-그림-그리기를-이용한-유아-영어-교육-애플리케이션"><a href="#신경망-학습-그림-그리기를-이용한-유아-영어-교육-애플리케이션" class="headerlink" title="신경망 학습 그림 그리기를 이용한 유아 영어 교육 애플리케이션"></a>신경망 학습 그림 그리기를 이용한 유아 영어 교육 애플리케이션</h2><h3 id="개요"><a href="#개요" class="headerlink" title="개요"></a>개요</h3><p>IT를 접목한 유아 영어 교육인 에듀테크, 재미와 반복학습의 특징을 가지고 있는 그림 그리기를 접목시켜, 아이들의 영어 발음을 인식하는 음성인식(DNN), 실시간으로 서버와 통신해 아이들의 그림의 특징을 추출할 수 있는 이미지 인식(CNN)으로 구성된 영어 교육 애플리케이션.</p><h3 id="프로젝트-기간"><a href="#프로젝트-기간" class="headerlink" title="프로젝트 기간"></a>프로젝트 기간</h3><p>2017년 12월 1일 ~ 현재 개발중 (5월 초 목표)</p><h3 id="프로젝트-등급"><a href="#프로젝트-등급" class="headerlink" title="프로젝트 등급"></a>프로젝트 등급</h3><p>현재 음성인식, 이미지 인식 학습 구현 완료 상태.<br>서버와 학습 프로그램 간 연동 문제 해결중.<br>애플리케이션은 콘텐츠 재정립으로 디자인 다시 설계중.</p><h3 id="GitHub-Repository"><a href="#GitHub-Repository" class="headerlink" title="GitHub Repository"></a>GitHub Repository</h3><p><a href="https://github.com/godpp/chilDraw_IOS" target="_blank" rel="noopener">https://github.com/godpp/chilDraw_IOS</a></p><h3 id="워크플로우"><a href="#워크플로우" class="headerlink" title="워크플로우"></a>워크플로우</h3><p><img src="/image/chilDrawUI/chilDraw_워크플로우.jpg" alt=""></p><h3 id="개발설명"><a href="#개발설명" class="headerlink" title="개발설명"></a>개발설명</h3><h4 id="스플래쉬-amp-로그인-화면"><a href="#스플래쉬-amp-로그인-화면" class="headerlink" title="스플래쉬 &amp; 로그인 화면"></a>스플래쉬 &amp; 로그인 화면</h4><p><img src="/image/chilDrawUI/chilDraw_스플래쉬로그인.jpg" alt=""></p><h4 id="회원가입-화면"><a href="#회원가입-화면" class="headerlink" title="회원가입 화면"></a>회원가입 화면</h4><p><img src="/image/chilDrawUI/chilDraw_회원가입.jpg" alt=""></p>]]></content>
     
     <summary type="html">
     
