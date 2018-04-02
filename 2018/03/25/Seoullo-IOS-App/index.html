@@ -14,18 +14,20 @@
 <meta property="og:site_name" content="1 + 1 = 11">
 <meta property="og:description" content="서울로 관광 애플리케이션개요많은 정보를 얻기 위해선 직접 검색을 하여 홈페이지에 들어가야 하는 번거로움을 없애고자 ‘서울로7017’에 대한 모든 관광 정보를 직관적으로 보여주고, 위치 기반 인증사진으로 서울로에 대한 커뮤니티를 구현한 애플리케이션. 프로젝트 기간2017년 10월 1일 ~ 2017년 10월 31일 (1개월) - iPhone 4 개발 2017년">
 <meta property="og:locale" content="ko">
-<meta property="og:image" content="https://godpp.github.io/image/서울로UI/seoullo_워크플로우.jpg">
+<meta property="og:image" content="https://godpp.github.io/image/서울로UI/seoullo_워크플로우1.png">
+<meta property="og:image" content="https://godpp.github.io/image/서울로UI/seoullo_워크플로우2.png">
+<meta property="og:image" content="https://godpp.github.io/image/서울로UI/seoullo_워크플로우3.png">
 <meta property="og:image" content="https://godpp.github.io/image/서울로UI/서울로_로그인화면.jpg">
 <meta property="og:image" content="https://godpp.github.io/image/서울로UI/서울로_메인화면.jpg">
 <meta property="og:image" content="https://godpp.github.io/image/서울로UI/서울로_관광지정보.jpg">
 <meta property="og:image" content="https://godpp.github.io/image/서울로UI/서울로_샵서울로.jpg">
 <meta property="og:image" content="https://godpp.github.io/image/서울로UI/서울로_서울로정보.jpg">
 <meta property="og:image" content="https://godpp.github.io/image/서울로UI/서울로_마이페이지.jpg">
-<meta property="og:updated_time" content="2018-04-01T08:32:52.360Z">
+<meta property="og:updated_time" content="2018-04-02T15:43:24.762Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Seoullo IOS App">
 <meta name="twitter:description" content="서울로 관광 애플리케이션개요많은 정보를 얻기 위해선 직접 검색을 하여 홈페이지에 들어가야 하는 번거로움을 없애고자 ‘서울로7017’에 대한 모든 관광 정보를 직관적으로 보여주고, 위치 기반 인증사진으로 서울로에 대한 커뮤니티를 구현한 애플리케이션. 프로젝트 기간2017년 10월 1일 ~ 2017년 10월 31일 (1개월) - iPhone 4 개발 2017년">
-<meta name="twitter:image" content="https://godpp.github.io/image/서울로UI/seoullo_워크플로우.jpg">
+<meta name="twitter:image" content="https://godpp.github.io/image/서울로UI/seoullo_워크플로우1.png">
     
     
         
@@ -151,7 +153,7 @@
 <h3 id="프로젝트-등급"><a href="#프로젝트-등급" class="headerlink" title="프로젝트 등급"></a>프로젝트 등급</h3><p>2017 서울시 앱 공모전 출품 (알파테스트) , 현재 Server Off</p>
 <p>IOS.ver 11.0</p>
 <h3 id="GitHub-Repository"><a href="#GitHub-Repository" class="headerlink" title="GitHub Repository"></a>GitHub Repository</h3><p><a href="https://github.com/godpp/seoullo_ios" target="_blank" rel="noopener">https://github.com/godpp/seoullo_ios</a></p>
-<h3 id="워크플로우"><a href="#워크플로우" class="headerlink" title="워크플로우"></a>워크플로우</h3><p><img src="/image/서울로UI/seoullo_워크플로우.jpg" alt=""></p>
+<h3 id="워크플로우"><a href="#워크플로우" class="headerlink" title="워크플로우"></a>워크플로우</h3><p><img src="/image/서울로UI/seoullo_워크플로우1.png" alt=""><br><img src="/image/서울로UI/seoullo_워크플로우2.png" alt=""><br><img src="/image/서울로UI/seoullo_워크플로우3.png" alt=""></p>
 <h3 id="개발설명"><a href="#개발설명" class="headerlink" title="개발설명"></a>개발설명</h3><h4 id="로그인-화면"><a href="#로그인-화면" class="headerlink" title="로그인 화면"></a>로그인 화면</h4><p><img src="/image/서울로UI/서울로_로그인화면.jpg" alt=""></p>
 <p>키보드가 올라왔을 때 아이디, 패스워드 입력 창이 가리지 않도록 CenterConstraintY를 Outlet으로 생성해 임의로 중심을 조정해 주었다.</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">func keyboardWillShow(notification: NSNotification) &#123;</span><br><span class="line">    <span class="keyword">if</span> check &#123;</span><br><span class="line">        <span class="keyword">if</span> <span class="built_in">let</span> keyboardSize = (notification.userInfo?[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue &#123;</span><br><span class="line">            backCenterConstrainY.constant = -130</span><br><span class="line">            centerConstraintY.constant = 0</span><br><span class="line">            check = <span class="literal">false</span></span><br><span class="line">            view.layoutIfNeeded()</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">func keyboardWillHide(notification: NSNotification) &#123;</span><br><span class="line">    <span class="keyword">if</span> <span class="built_in">let</span> keyboardSize = (notification.userInfo?[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue &#123;</span><br><span class="line">        centerConstraintY.constant = 130</span><br><span class="line">        backCenterConstrainY.constant = 0</span><br><span class="line">        check = <span class="literal">true</span></span><br><span class="line">        view.layoutIfNeeded()</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
