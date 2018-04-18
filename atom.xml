@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://godpp.github.io/"/>
-  <updated>2018-04-18T14:43:42.279Z</updated>
+  <updated>2018-04-18T14:45:29.023Z</updated>
   <id>https://godpp.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://godpp.github.io/2018/04/18/Node-js/"/>
     <id>https://godpp.github.io/2018/04/18/Node-js/</id>
     <published>2018-04-18T14:42:22.000Z</published>
-    <updated>2018-04-18T14:43:42.279Z</updated>
+    <updated>2018-04-18T14:45:29.023Z</updated>
     
     <content type="html"><![CDATA[<h2 id="ssss"><a href="#ssss" class="headerlink" title="ssss"></a>ssss</h2>]]></content>
     
@@ -34,7 +34,7 @@
     
     </summary>
     
-      <category term="Node.js" scheme="https://godpp.github.io/categories/Node-js/"/>
+      <category term="Node" scheme="https://godpp.github.io/categories/Node/"/>
     
     
   </entry>
