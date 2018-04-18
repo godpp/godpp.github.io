@@ -6,17 +6,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="HandheldFriendly" content="True">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <meta name="description" content="ssss">
+    <meta name="description" content="Node.js의 개요# Node.js 소개 Node.js  2009년 Ryan Dahi이 처음 발표한 프로젝트 자바 스크립트 언어 크롭 V8 엔진   Node.js의 특징  싱글 쓰레드 기반 비동기 I/O 사용 이벤트 기반 (event driven) 네트워크 애플리케이션에 적합   비동기 I/O  시간이 걸리는 I/O 하드 디스크 접근 데이터베이스 서버">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Node.js의 개요">
 <meta property="og:url" content="https://godpp.github.io/2018/04/18/Node-js/index.html">
 <meta property="og:site_name" content="1 + 1 = 11">
-<meta property="og:description" content="ssss">
+<meta property="og:description" content="Node.js의 개요# Node.js 소개 Node.js  2009년 Ryan Dahi이 처음 발표한 프로젝트 자바 스크립트 언어 크롭 V8 엔진   Node.js의 특징  싱글 쓰레드 기반 비동기 I/O 사용 이벤트 기반 (event driven) 네트워크 애플리케이션에 적합   비동기 I/O  시간이 걸리는 I/O 하드 디스크 접근 데이터베이스 서버">
 <meta property="og:locale" content="ko">
-<meta property="og:updated_time" content="2018-04-18T14:45:29.023Z">
+<meta property="og:image" content="https://godpp.github.io/image/Node-js/node-js-logo.png">
+<meta property="og:updated_time" content="2018-04-18T15:58:32.133Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Node.js의 개요">
-<meta name="twitter:description" content="ssss">
+<meta name="twitter:description" content="Node.js의 개요# Node.js 소개 Node.js  2009년 Ryan Dahi이 처음 발표한 프로젝트 자바 스크립트 언어 크롭 V8 엔진   Node.js의 특징  싱글 쓰레드 기반 비동기 I/O 사용 이벤트 기반 (event driven) 네트워크 애플리케이션에 적합   비동기 I/O  시간이 걸리는 I/O 하드 디스크 접근 데이터베이스 서버">
+<meta name="twitter:image" content="https://godpp.github.io/image/Node-js/node-js-logo.png">
     
     
         
@@ -74,10 +76,10 @@
         <li><a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fas fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i></a></li>
         <li><a class="icon" href="#"><i class="fas fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i></a></li>
       </ul>
-      <span id="i-prev" class="info" style="display:none;">Previous post</span>
-      <span id="i-next" class="info" style="display:none;">Next post</span>
-      <span id="i-top" class="info" style="display:none;">Back to top</span>
-      <span id="i-share" class="info" style="display:none;">Share post</span>
+      <span id="i-prev" class="info" style="display:none;">Article précédent</span>
+      <span id="i-next" class="info" style="display:none;">Article suivant</span>
+      <span id="i-top" class="info" style="display:none;">Retour au début</span>
+      <span id="i-share" class="info" style="display:none;">Partager cette article</span>
     </span>
     <br/>
     <div id="share" style="display: none">
@@ -95,7 +97,7 @@
 </ul>
     </div>
     <div id="toc">
-      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#ssss"><span class="toc-number">1.</span> <span class="toc-text">ssss</span></a></li></ol>
+      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Node-js의-개요"><span class="toc-number">1.</span> <span class="toc-text">Node.js의 개요</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Node-js-소개"><span class="toc-number">1.1.</span> <span class="toc-text"># Node.js 소개</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#프로그래밍-모델"><span class="toc-number">1.2.</span> <span class="toc-text"># 프로그래밍 모델</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Hello-World"><span class="toc-number">1.3.</span> <span class="toc-text"># Hello World</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#도큐먼트"><span class="toc-number">1.4.</span> <span class="toc-text"># 도큐먼트</span></a></li></ol></li></ol>
     </div>
   </span>
 </div>
@@ -129,7 +131,141 @@
   
 
   <div class="content" itemprop="articleBody">
-    <h2 id="ssss"><a href="#ssss" class="headerlink" title="ssss"></a>ssss</h2>
+    <p><img src="/image/Node-js/node-js-logo.png" alt=""></p>
+<h1 id="Node-js의-개요"><a href="#Node-js의-개요" class="headerlink" title="Node.js의 개요"></a>Node.js의 개요</h1><h2 id="Node-js-소개"><a href="#Node-js-소개" class="headerlink" title="# Node.js 소개"></a># Node.js 소개</h2><ul>
+<li><p>Node.js</p>
+<ul>
+<li>2009년 Ryan Dahi이 처음 발표한 프로젝트</li>
+<li>자바 스크립트 언어</li>
+<li>크롭 V8 엔진</li>
+</ul>
+</li>
+<li><p>Node.js의 특징</p>
+<ul>
+<li>싱글 쓰레드 기반</li>
+<li>비동기 I/O 사용</li>
+<li>이벤트 기반 (event driven)</li>
+<li>네트워크 애플리케이션에 적합</li>
+</ul>
+</li>
+<li><p>비동기 I/O</p>
+<ul>
+<li>시간이 걸리는 I/O<ul>
+<li>하드 디스크 접근</li>
+<li>데이터베이스 서버</li>
+<li>네트워크를 이용해서 다른 서비스 접근</li>
+</ul>
+</li>
+<li>I/O 동작이 끝날 때까지 대기 : 동기식</li>
+<li>I/O 동작이 끝날 때까지 대기하지 않음 : 비동기식</li>
+</ul>
+</li>
+<li><p>비동기 I/O의 장점</p>
+<ul>
+<li>성능 및 메모리 사용 측면에서 유리하다</li>
+</ul>
+</li>
+<li><p>Node.js의 장점</p>
+<ul>
+<li>싱글 쓰레드로 작성</li>
+<li>비동기 I/O 사용</li>
+<li>간단한 구조의 경량 프레임워크와 풍부한 라이브러리</li>
+<li>서버와 클라이언트에서 사용하는 언어가 같다.</li>
+</ul>
+</li>
+<li><p>Node.js 권장 분야</p>
+<ul>
+<li>실시간 소셜 네트워크 서빗</li>
+<li>데이터 중심의 서비스</li>
+<li>IoT 기기 연동</li>
+</ul>
+</li>
+<li><p>Node.js 아키텍처</p>
+<ul>
+<li>상위레벨 - JavaScript</li>
+<li>하위레벨 - C (바인딩, V8 엔진)</li>
+</ul>
+</li>
+</ul>
+<h2 id="프로그래밍-모델"><a href="#프로그래밍-모델" class="headerlink" title="# 프로그래밍 모델"></a># 프로그래밍 모델</h2><ul>
+<li>동기식 함수 구현</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">function add(i,j)&#123;</span><br><span class="line">	return i+j;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<ul>
+<li>동기식 함수 사용</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">var result = add(1,2);</span><br><span class="line">console.log(&apos;Result:&apos;, result);</span><br></pre></td></tr></table></figure>
+<ul>
+<li>비동기식 함수 구현</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">function add(i,j,callback)&#123;</span><br><span class="line">	var result = i+j;</span><br><span class="line">	callback(result);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<ul>
+<li>비동기식 함수 사용</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">add(1,2, function(result)&#123;</span><br><span class="line">	console.log(&apos;Result:&apos;, result);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<h2 id="Hello-World"><a href="#Hello-World" class="headerlink" title="# Hello World"></a># Hello World</h2><ul>
+<li>helloWorld.js</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">console.log(&quot;Hello World!&quot;);</span><br></pre></td></tr></table></figure>
+<pre><code>- node helloWorld 실행
+</code></pre><ul>
+<li>helloWorld2.js</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">var http = require(&apos;http&apos;);</span><br><span class="line">http.createServer(function(request, response)&#123;</span><br><span class="line">    response.writeHead(200, &#123;&apos;Content-Type&apos;:&apos;text/html&apos;&#125;);</span><br><span class="line">    response.end(&apos;&lt;h1&gt;Hello World!&lt;/h1&gt;&apos;);</span><br><span class="line">&#125;).listen(3000);</span><br></pre></td></tr></table></figure>
+<pre><code>- node helloWorld2 실행
+- 127.0.0.1:3000 으로 확인
+</code></pre><h2 id="도큐먼트"><a href="#도큐먼트" class="headerlink" title="# 도큐먼트"></a># 도큐먼트</h2><ul>
+<li><p>모듈</p>
+<ul>
+<li>Node.js 간단한 구조</li>
+<li>필요한 모듈을 로딩</li>
+<li>모듈 : 다른 언어의 라이브러리에 해당</li>
+</ul>
+</li>
+<li><p>API 확인</p>
+<ul>
+<li>Node.js 사이트 -&gt; DOCS -&gt; API</li>
+</ul>
+</li>
+<li><p>API 안정도 (Stability)</p>
+<ul>
+<li>0 : Deprecated</li>
+<li>1 : Experimental</li>
+<li>2 : Stable</li>
+<li>3 : Locked</li>
+</ul>
+</li>
+<li><p>모듈 로딩</p>
+<ul>
+<li>require(‘모듈 이름’)</li>
+<li>절대 경로 혹은 상대 경로</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">var readline = require(&apos;readline&apos;);</span><br></pre></td></tr></table></figure>
+<ul>
+<li><p>모듈 종류</p>
+<ul>
+<li>기본 모듈 : 미리 컴파일된 상태로 라이브러리 디렉토리 (설치 불 필요)</li>
+<li>확장 모듈 : npm로 별도 설치</li>
+</ul>
+</li>
+<li><p>모듈 로딩 - 객체 생성</p>
+<ul>
+<li>클래스 : Interface</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">var readline = require(&apos;readline&apos;);</span><br><span class="line">var rl = readline.createInterface();</span><br></pre></td></tr></table></figure>
+<ul>
+<li>객체 생성 함수 옵션</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">var rl = readline.createInterface(&#123;</span><br><span class="line">	input: process.stdin,</span><br><span class="line">	output: process.stdout</span><br><span class="line">	&#125;);</span><br></pre></td></tr></table></figure>
+<ul>
+<li>이벤트 (.on([이벤트 이름], [리스너 함수]))</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">rl.on(&apos;line&apos;, function(cmd)&#123;</span><br><span class="line">	console.log(&apos;You just typed: &apos;+ cmd);</span><br><span class="line">	&#125;);</span><br></pre></td></tr></table></figure>
+
   </div>
 </article>
 
@@ -155,7 +291,7 @@
     </div>
 
     <div id="toc-footer" style="display: none">
-      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#ssss"><span class="toc-number">1.</span> <span class="toc-text">ssss</span></a></li></ol>
+      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Node-js의-개요"><span class="toc-number">1.</span> <span class="toc-text">Node.js의 개요</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Node-js-소개"><span class="toc-number">1.1.</span> <span class="toc-text"># Node.js 소개</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#프로그래밍-모델"><span class="toc-number">1.2.</span> <span class="toc-text"># 프로그래밍 모델</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Hello-World"><span class="toc-number">1.3.</span> <span class="toc-text"># Hello World</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#도큐먼트"><span class="toc-number">1.4.</span> <span class="toc-text"># 도큐먼트</span></a></li></ol></li></ol>
     </div>
 
     <div id="share-footer" style="display: none">
@@ -175,9 +311,9 @@
 
     <div id="actions-footer">
         <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;"><i class="fas fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
-        <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;"><i class="fas fa-list fa-lg" aria-hidden="true"></i> TOC</a>
-        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;"><i class="fas fa-share-alt fa-lg" aria-hidden="true"></i> Share</a>
-        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fas fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
+        <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;"><i class="fas fa-list fa-lg" aria-hidden="true"></i> Table des matière</a>
+        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;"><i class="fas fa-share-alt fa-lg" aria-hidden="true"></i> Partager</a>
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fas fa-chevron-up fa-lg" aria-hidden="true"></i> Début</a>
     </div>
 
   </div>
