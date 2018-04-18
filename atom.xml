@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://godpp.github.io/"/>
-  <updated>2018-04-18T14:39:35.737Z</updated>
+  <updated>2018-04-18T14:40:17.327Z</updated>
   <id>https://godpp.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://godpp.github.io/2018/04/18/Node-js%EC%9D%98-%EA%B0%9C%EC%9A%94/"/>
     <id>https://godpp.github.io/2018/04/18/Node-js의-개요/</id>
     <published>2018-04-18T14:39:21.000Z</published>
-    <updated>2018-04-18T14:39:35.737Z</updated>
+    <updated>2018-04-18T14:40:17.327Z</updated>
     
     <summary type="html">
     
@@ -29,6 +29,8 @@
     
       <category term="Node.js" scheme="https://godpp.github.io/categories/Node-js/"/>
     
+    
+      <category term="node.js, beginner" scheme="https://godpp.github.io/tags/node-js-beginner/"/>
     
   </entry>
   
