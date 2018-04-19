@@ -6,18 +6,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="HandheldFriendly" content="True">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <meta name="description" content="# Node.js 소개 Node.js  2009년 Ryan Dahi이 처음 발표한 프로젝트 자바 스크립트 언어 크롭 V8 엔진   Node.js의 특징  싱글 쓰레드 기반 비동기 I/O 사용 이벤트 기반 (event driven) 네트워크 애플리케이션에 적합   비동기 I/O  시간이 걸리는 I/O 하드 디스크 접근 데이터베이스 서버 네트워크를 이용해서">
+    <meta name="description" content="Node.js 소개 Node.js  2009년 Ryan Dahi이 처음 발표한 프로젝트 자바 스크립트 언어 크롭 V8 엔진   Node.js의 특징  싱글 쓰레드 기반 비동기 I/O 사용 이벤트 기반 (event driven) 네트워크 애플리케이션에 적합   비동기 I/O  시간이 걸리는 I/O 하드 디스크 접근 데이터베이스 서버 네트워크를 이용해서 다른">
+<meta name="keywords" content="node, node.js, javascript, docs, api">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Node.js의 개요">
 <meta property="og:url" content="https://godpp.github.io/2018/04/18/Node-js/index.html">
 <meta property="og:site_name" content="1 + 1 = 11">
-<meta property="og:description" content="# Node.js 소개 Node.js  2009년 Ryan Dahi이 처음 발표한 프로젝트 자바 스크립트 언어 크롭 V8 엔진   Node.js의 특징  싱글 쓰레드 기반 비동기 I/O 사용 이벤트 기반 (event driven) 네트워크 애플리케이션에 적합   비동기 I/O  시간이 걸리는 I/O 하드 디스크 접근 데이터베이스 서버 네트워크를 이용해서">
+<meta property="og:description" content="Node.js 소개 Node.js  2009년 Ryan Dahi이 처음 발표한 프로젝트 자바 스크립트 언어 크롭 V8 엔진   Node.js의 특징  싱글 쓰레드 기반 비동기 I/O 사용 이벤트 기반 (event driven) 네트워크 애플리케이션에 적합   비동기 I/O  시간이 걸리는 I/O 하드 디스크 접근 데이터베이스 서버 네트워크를 이용해서 다른">
 <meta property="og:locale" content="ko">
 <meta property="og:image" content="https://godpp.github.io/image/Node-js/node-js-logo.png">
-<meta property="og:updated_time" content="2018-04-18T16:02:09.169Z">
+<meta property="og:updated_time" content="2018-04-19T15:11:01.396Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Node.js의 개요">
-<meta name="twitter:description" content="# Node.js 소개 Node.js  2009년 Ryan Dahi이 처음 발표한 프로젝트 자바 스크립트 언어 크롭 V8 엔진   Node.js의 특징  싱글 쓰레드 기반 비동기 I/O 사용 이벤트 기반 (event driven) 네트워크 애플리케이션에 적합   비동기 I/O  시간이 걸리는 I/O 하드 디스크 접근 데이터베이스 서버 네트워크를 이용해서">
+<meta name="twitter:description" content="Node.js 소개 Node.js  2009년 Ryan Dahi이 처음 발표한 프로젝트 자바 스크립트 언어 크롭 V8 엔진   Node.js의 특징  싱글 쓰레드 기반 비동기 I/O 사용 이벤트 기반 (event driven) 네트워크 애플리케이션에 적합   비동기 I/O  시간이 걸리는 I/O 하드 디스크 접근 데이터베이스 서버 네트워크를 이용해서 다른">
 <meta name="twitter:image" content="https://godpp.github.io/image/Node-js/node-js-logo.png">
     
     
@@ -70,6 +71,8 @@
     <span id="actions">
       <ul>
         
+        <li><a class="icon" href="/2018/04/19/Node-js의-기본-모듈1/"><i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i></a></li>
+        
         
         <li><a class="icon" href="/2018/03/31/chilDraw-IOS-IPAD-App/"><i class="fas fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i></a></li>
         
@@ -97,7 +100,7 @@
 </ul>
     </div>
     <div id="toc">
-      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Node-js-소개"><span class="toc-number">1.</span> <span class="toc-text"># Node.js 소개</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#프로그래밍-모델"><span class="toc-number">2.</span> <span class="toc-text"># 프로그래밍 모델</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Hello-World"><span class="toc-number">3.</span> <span class="toc-text"># Hello World</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#도큐먼트"><span class="toc-number">4.</span> <span class="toc-text"># 도큐먼트</span></a></li></ol>
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Node-js-소개"><span class="toc-number">1.</span> <span class="toc-text">Node.js 소개</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#프로그래밍-모델"><span class="toc-number">2.</span> <span class="toc-text">프로그래밍 모델</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Hello-World"><span class="toc-number">3.</span> <span class="toc-text">Hello World</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#도큐먼트"><span class="toc-number">4.</span> <span class="toc-text">도큐먼트</span></a></li></ol>
     </div>
   </span>
 </div>
@@ -125,6 +128,11 @@
 
 
       
+    <div class="article-tag">
+        <i class="fas fa-tag"></i>
+        <a class="tag-link" href="/tags/node-node-js-javascript-docs-api/">node, node.js, javascript, docs, api</a>
+    </div>
+
 
     </div>
   </header>
@@ -132,7 +140,7 @@
 
   <div class="content" itemprop="articleBody">
     <p><img src="/image/Node-js/node-js-logo.png" width="50%"></p>
-<h2 id="Node-js-소개"><a href="#Node-js-소개" class="headerlink" title="# Node.js 소개"></a># Node.js 소개</h2><ul>
+<h2 id="Node-js-소개"><a href="#Node-js-소개" class="headerlink" title="Node.js 소개"></a>Node.js 소개</h2><ul>
 <li><p>Node.js</p>
 <ul>
 <li>2009년 Ryan Dahi이 처음 발표한 프로젝트</li>
@@ -187,7 +195,7 @@
 </ul>
 </li>
 </ul>
-<h2 id="프로그래밍-모델"><a href="#프로그래밍-모델" class="headerlink" title="# 프로그래밍 모델"></a># 프로그래밍 모델</h2><ul>
+<h2 id="프로그래밍-모델"><a href="#프로그래밍-모델" class="headerlink" title="프로그래밍 모델"></a>프로그래밍 모델</h2><ul>
 <li>동기식 함수 구현</li>
 </ul>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">function add(i,j)&#123;</span><br><span class="line">	return i+j;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
@@ -203,7 +211,7 @@
 <li>비동기식 함수 사용</li>
 </ul>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">add(1,2, function(result)&#123;</span><br><span class="line">	console.log(&apos;Result:&apos;, result);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
-<h2 id="Hello-World"><a href="#Hello-World" class="headerlink" title="# Hello World"></a># Hello World</h2><ul>
+<h2 id="Hello-World"><a href="#Hello-World" class="headerlink" title="Hello World"></a>Hello World</h2><ul>
 <li>helloWorld.js</li>
 </ul>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">console.log(&quot;Hello World!&quot;);</span><br></pre></td></tr></table></figure>
@@ -214,7 +222,7 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">var http = require(&apos;http&apos;);</span><br><span class="line">http.createServer(function(request, response)&#123;</span><br><span class="line">    response.writeHead(200, &#123;&apos;Content-Type&apos;:&apos;text/html&apos;&#125;);</span><br><span class="line">    response.end(&apos;&lt;h1&gt;Hello World!&lt;/h1&gt;&apos;);</span><br><span class="line">&#125;).listen(3000);</span><br></pre></td></tr></table></figure>
 <pre><code>- node helloWorld2 실행
 - 127.0.0.1:3000 으로 확인
-</code></pre><h2 id="도큐먼트"><a href="#도큐먼트" class="headerlink" title="# 도큐먼트"></a># 도큐먼트</h2><ul>
+</code></pre><h2 id="도큐먼트"><a href="#도큐먼트" class="headerlink" title="도큐먼트"></a>도큐먼트</h2><ul>
 <li><p>모듈</p>
 <ul>
 <li>Node.js 간단한 구조</li>
@@ -291,7 +299,7 @@
     </div>
 
     <div id="toc-footer" style="display: none">
-      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Node-js-소개"><span class="toc-number">1.</span> <span class="toc-text"># Node.js 소개</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#프로그래밍-모델"><span class="toc-number">2.</span> <span class="toc-text"># 프로그래밍 모델</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Hello-World"><span class="toc-number">3.</span> <span class="toc-text"># Hello World</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#도큐먼트"><span class="toc-number">4.</span> <span class="toc-text"># 도큐먼트</span></a></li></ol>
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Node-js-소개"><span class="toc-number">1.</span> <span class="toc-text">Node.js 소개</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#프로그래밍-모델"><span class="toc-number">2.</span> <span class="toc-text">프로그래밍 모델</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Hello-World"><span class="toc-number">3.</span> <span class="toc-text">Hello World</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#도큐먼트"><span class="toc-number">4.</span> <span class="toc-text">도큐먼트</span></a></li></ol>
     </div>
 
     <div id="share-footer" style="display: none">
