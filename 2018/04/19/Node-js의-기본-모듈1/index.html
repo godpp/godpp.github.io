@@ -15,7 +15,7 @@
 <meta property="og:description" content="주요 기본 모듈 프로세스 환경  os, process, cluster   파일과 경로, URL  fs, path, URL, querystring, stream   네트워크 모듈  http, https, net, dgram, dns    전역 객체 전역 객체 (global)  별도의 모듈 로딩없이 사용 global 모듈 global.console.log()">
 <meta property="og:locale" content="ko">
 <meta property="og:image" content="https://godpp.github.io/image/Node-js/node-js-logo.png">
-<meta property="og:updated_time" content="2018-04-19T15:10:48.568Z">
+<meta property="og:updated_time" content="2018-04-24T16:25:29.360Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Node.js의 기본 모듈1">
 <meta name="twitter:description" content="주요 기본 모듈 프로세스 환경  os, process, cluster   파일과 경로, URL  fs, path, URL, querystring, stream   네트워크 모듈  http, https, net, dgram, dns    전역 객체 전역 객체 (global)  별도의 모듈 로딩없이 사용 global 모듈 global.console.log()">
@@ -98,7 +98,7 @@
 </ul>
     </div>
     <div id="toc">
-      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#주요-기본-모듈"><span class="toc-number">1.</span> <span class="toc-text">주요 기본 모듈</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#전역-객체"><span class="toc-number">2.</span> <span class="toc-text">전역 객체</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#타이머"><span class="toc-number">3.</span> <span class="toc-text">타이머</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#콘솔-Console"><span class="toc-number">4.</span> <span class="toc-text">콘솔 (Console)</span></a></li></ol>
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#주요-기본-모듈"><span class="toc-number">1.</span> <span class="toc-text">주요 기본 모듈</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#전역-객체"><span class="toc-number">2.</span> <span class="toc-text">전역 객체</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#타이머"><span class="toc-number">3.</span> <span class="toc-text">타이머</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#콘솔-Console"><span class="toc-number">4.</span> <span class="toc-text">콘솔 (Console)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#유틸리티"><span class="toc-number">5.</span> <span class="toc-text">유틸리티</span></a></li></ol>
     </div>
   </span>
 </div>
@@ -244,7 +244,88 @@
 </ul>
 </li>
 </ul>
-<h2 id="콘솔-Console"><a href="#콘솔-Console" class="headerlink" title="콘솔 (Console)"></a>콘솔 (Console)</h2>
+<h2 id="콘솔-Console"><a href="#콘솔-Console" class="headerlink" title="콘솔 (Console)"></a>콘솔 (Console)</h2><ul>
+<li><p>콘솔 (Console)</p>
+<ul>
+<li>로그 남기기</li>
+<li>실행 시간 측정</li>
+</ul>
+</li>
+<li><p>로그 남기기</p>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">console.log(&apos;log&apos;, &apos;log message&apos;);</span><br><span class="line">console.log(&apos;info&apos;, &apos;info message&apos;);</span><br><span class="line">console.log(&apos;warn&apos;, &apos;warn message&apos;);</span><br><span class="line">console.log(&apos;error&apos;, &apos;error message&apos;);</span><br></pre></td></tr></table></figure>
+<ul>
+<li><p>값 출력</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">var intValue = 3;</span><br><span class="line">console.log(&apos;intValue&apos; + 3);</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>객체형 출력</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">var obj = &#123;</span><br><span class="line">	name : &apos;IU&apos;,</span><br><span class="line">	job : &apos;Singer&apos;</span><br><span class="line">&#125;</span><br><span class="line">console.log(&apos;obj:&apos; + obj); //+를 이용하면 object 타입으로 타입추론이 힘들다.</span><br><span class="line">console.log(&apos;obj:&apos;, obj); //콤마를 이용하면 어떤 값이 들어있는지 잘 알 수 있다.</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li><p>커스텀 콘솔</p>
+<ul>
+<li><p>콘솔 타입 로딩</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">var Console = require(&apos;console&apos;).Console;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>콘솔 객체 생성</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">new Console(stdout[, stderr])</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>파라미터 : 출력 스트림</p>
+<ul>
+<li>stdout : 표준 출력 스트림, info, log</li>
+<li>stderr : 에러 출력, warn, error</li>
+</ul>
+</li>
+<li><p>파일로 로그 남기는 커스텀 콘솔</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">// info, log 출력</span><br><span class="line">var output = fs.createWriteStream(&apos;./stdout.log&apos;);</span><br><span class="line">// error, 경고 출력</span><br><span class="line">var errorOutput = fs.createWriteStream(&apos;./stderr.log&apos;);</span><br><span class="line">// 화면 뿐만 아니라 파일로도 로그 남기기 가능</span><br><span class="line">var logger = new Console(output, errorOutput);</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li><p>실행 시간 측정</p>
+<ul>
+<li>시작 시점 설정하기<ul>
+<li>console.time(TIMER_NAME)</li>
+</ul>
+</li>
+<li><p>종료 시점, 걸린 시간 계산해서 출력</p>
+<ul>
+<li>console.timeEnd(TIMER_NAME)</li>
+</ul>
+</li>
+<li><p>예제 코드</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">//시간 측정 시작</span><br><span class="line">console.time(&apos;SUM&apos;);</span><br><span class="line">var sum = 0;</span><br><span class="line">for(var i = 1; i&lt;10000; i++)&#123;</span><br><span class="line">	sum += i;</span><br><span class="line">&#125;</span><br><span class="line">//시간 측정 종료</span><br><span class="line">console.timeEnd(&apos;SUM&apos;);</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="유틸리티"><a href="#유틸리티" class="headerlink" title="유틸리티"></a>유틸리티</h2><ul>
+<li><p>모듈 로딩</p>
+<ul>
+<li>var util = require(‘util’);</li>
+</ul>
+</li>
+<li><p>주요 기능</p>
+<ul>
+<li>문자열 포맷</li>
+<li>상속</li>
+</ul>
+</li>
+<li><p>포멧</p>
+<ul>
+<li>문자열 포멧<ul>
+<li>util.format(format[, …])</li>
+</ul>
+</li>
+<li>placeholder<ul>
+<li>%s : String</li>
+<li>%d : Number</li>
+<li>%j : JSON</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
   </div>
 </article>
 
@@ -270,7 +351,7 @@
     </div>
 
     <div id="toc-footer" style="display: none">
-      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#주요-기본-모듈"><span class="toc-number">1.</span> <span class="toc-text">주요 기본 모듈</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#전역-객체"><span class="toc-number">2.</span> <span class="toc-text">전역 객체</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#타이머"><span class="toc-number">3.</span> <span class="toc-text">타이머</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#콘솔-Console"><span class="toc-number">4.</span> <span class="toc-text">콘솔 (Console)</span></a></li></ol>
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#주요-기본-모듈"><span class="toc-number">1.</span> <span class="toc-text">주요 기본 모듈</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#전역-객체"><span class="toc-number">2.</span> <span class="toc-text">전역 객체</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#타이머"><span class="toc-number">3.</span> <span class="toc-text">타이머</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#콘솔-Console"><span class="toc-number">4.</span> <span class="toc-text">콘솔 (Console)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#유틸리티"><span class="toc-number">5.</span> <span class="toc-text">유틸리티</span></a></li></ol>
     </div>
 
     <div id="share-footer" style="display: none">
